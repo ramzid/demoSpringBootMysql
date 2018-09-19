@@ -31,9 +31,9 @@ public class DemoSpringBootMysqlApplication implements CommandLineRunner {
 		emp.setNom("dridi");
 		emp.setPrenom("ramzi");
 		employeService.add(emp);
-	List<Employe>	listemp=employeService.findAll();
+   	List<Employe>	listemp=employeService.findAll();
 	for (Employe employe : listemp) {
-		System.out.println(employe.getNom());
+		System.out.println(employe.getNom()+" "+ employe.getPrenom());
 		
 	}
 	}
