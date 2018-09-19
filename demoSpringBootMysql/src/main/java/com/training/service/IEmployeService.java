@@ -10,4 +10,5 @@ public interface IEmployeService {
 	void delete(Employe emp);
 	void update(Employe emp);
 	List<Employe> findAll();
+	Employe findOne(int id);
 }

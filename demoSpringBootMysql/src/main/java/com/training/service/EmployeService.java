@@ -34,4 +34,16 @@ public class EmployeService implements IEmployeService{
 		return employedao.findAll();
 	}
 
+	@Override
+	public void update(Employe emp) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Employe findOne(int id) {
+		// TODO Auto-generated method stub
+		return employedao.getOne(id);
+	}
+
 }
