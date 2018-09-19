@@ -37,7 +37,8 @@ public class EmployeService implements IEmployeService{
 	@Override
 	public void update(Employe emp) {
 		// TODO Auto-generated method stub
-		
+		if(findOne(emp.getId())!=null)
+			employedao.save(emp);
 	}
 
 	@Override
